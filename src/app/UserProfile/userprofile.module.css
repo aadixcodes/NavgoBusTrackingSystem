@@ -1,0 +1,254 @@
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.subHeader {
+    margin-bottom: 40px;
+    margin-top: 15px;
+    width: 100%;
+    background-color: #fff;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.backButton {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.5rem;
+}
+
+.backButton svg {
+    margin-right: 10px;
+}
+
+.profileCard {
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 18px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    flex-shrink: 0;
+}
+
+.userInfo {
+    flex: 1;
+}
+
+.infoItem {
+    margin-bottom: 15px;
+    font-size: 1.25rem;
+}
+
+.label {
+    font-weight: bold;
+}
+
+.value {
+    margin-left: 5px;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+    .profileCard {
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+    .profileCard {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+    .avatar {
+        margin-bottom: 20px;
+    }
+    .userInfo {
+        width: 100%;
+    }
+    .infoItem {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .subHeader {
+        padding: 10px;
+    }
+    .backButton {
+        font-size: 1.2rem;
+    }
+    .avatar {
+        width: 120px;
+        height: 120px;
+        font-size: 30px;
+    }
+    .infoItem {
+        font-size: 1rem;
+    }
+}
+
+.loader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+  }
+  
+  .spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #FACC15;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin-bottom: 10px;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  
+
+  /* .editButtonContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .editButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #333;
+    margin-left: 10px;
+  }
+  
+  .buttonGroup {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .saveButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cancelButton {
+    background-color: #f44336;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .inputField {
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1rem;
+  } */
+  
+
+  .profileCard {
+    position: relative;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .editIcon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .avatar {
+    font-size: 3rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  
+  .buttonGroup {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .saveButton {
+    background-color: #FACC15;
+    color: black;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cancelButton {
+    background-color: #f44336;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .inputField {
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  

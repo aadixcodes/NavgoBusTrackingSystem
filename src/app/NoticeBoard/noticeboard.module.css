@@ -1,0 +1,305 @@
+.container {
+    width: 80%;
+    /* max-width: 800px; */
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    margin-bottom: 50px;
+  }
+  .header {
+    width: 100%;
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    margin-bottom: 50px;
+    margin-top: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .backButton {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000000;
+    font-size: 25px;
+  }
+  
+  .backButton svg {
+    margin-right: 20px;
+  }
+
+  
+  .noticeBoardContainer {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+  
+  .noticeBoardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .noticeBoardHeader h2 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .currentDate {
+    width: 80%;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 0px;
+  }
+  
+  .noticesContainer {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .notice {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    font-size: 18px;
+  }
+  
+  .noNotices {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    padding: 20px;
+  }
+  
+  @media (max-width: 600px) {
+    .noticesContainer{
+        width: 100%;
+    }
+    .noticeBoardHeader {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .noticeBoardHeader h2 {
+      margin-bottom: 10px;
+    }
+  
+    .notice {
+      font-size: 14px;
+    }
+  }
+
+  .loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #FACC15;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 10px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.addButton {
+  background-color: #FACC15;
+  color: black;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popupContent {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+
+.popupContent h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.dateInput, .messageInput {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.messageInput {
+  height: 100px;
+  resize: vertical;
+}
+
+.popupButtons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.sendButton, .cancelButton {
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sendButton {
+  background-color: #FACC15;
+  color: black;
+  border: none;
+}
+
+.cancelButton {
+  background-color: #e8f0f9;
+  color: #05070f;
+  border: 2px solid #FACC15;
+}
+
+.sendButton:hover, .cancelButton:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 800px) {
+  .addButton {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 500px) {
+  .addButton {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .addButton {
+    margin-top: 10px;
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  .popupContent {
+    width: 95%;
+    padding: 1.5rem;
+  }
+
+  .popupContent h2 {
+    font-size: 1.2rem;
+  }
+
+  .dateInput, .messageInput, .sendButton, .cancelButton {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .addButton {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+
+  .popupContent {
+    padding: 1rem;
+  }
+
+  .popupContent h2 {
+    font-size: 1rem;
+  }
+
+  .dateInput, .messageInput, .sendButton, .cancelButton {
+    font-size: 12px;
+  }
+}
+
+.popupRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.popupRow label {
+  width: 30%;
+  font-weight: bold;
+}
+
+.popupButtons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.sendButton, .cancelButton {
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sendButton {
+  background-color: #FACC15;
+  color: black;
+  border: none;
+}
+
+.cancelButton {
+  background-color: #e8f0f9;
+  color: #05070f;
+  border: 2px solid #FACC15;
+}
+
+.sendButton:hover, .cancelButton:hover {
+  opacity: 0.9;
+}
