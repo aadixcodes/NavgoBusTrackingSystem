@@ -21,7 +21,7 @@ const AboutUs = () => {
           <h1 className={styles.head}>About Us</h1>
         <section className={styles.hero}>
           <div className={styles.heroImage}>
-            <img src="/Assets/aboutus1.png" alt="Navgo app on smartphone" />
+            <img src="/Assets/aboutus2.svg" alt="Navgo app on smartphone" />
           </div>
           <div className={styles.heroContent}>
             <h1 className="text-[25px]">
@@ -51,13 +51,13 @@ const AboutUs = () => {
                 interface for quick reference
               </p>
             </span>
-            <img src="/Assets/f1.png" alt="Navgo app feature" />
+            <img src="/Assets/ff1.png" alt="Navgo app feature" />
           </div>
         </section>
 
         <section className={styles.features}>
           <div className={styles.featureItem2}>
-            <img src="/Assets/f3.png" alt="Navgo app feature" />
+            <img src="/Assets/ff2.png" alt="Navgo app feature" />
             <span className="w-[40rem] flex flex-col items-start">
               <h4 className="text-[25px] font-bold">
                 Smart Arrival Notification
@@ -87,7 +87,7 @@ const AboutUs = () => {
                 checks
               </p>
             </span>
-            <img src="/Assets/f2.png" alt="Navgo app feature" />
+            <img src="/Assets/ff3.png" alt="Navgo app feature" />
           </div>
         </section>
         <br />
