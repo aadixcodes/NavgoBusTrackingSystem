@@ -1,0 +1,136 @@
+.container {
+    background-color: white;
+    color: #374151;
+  }
+  
+  .wrapper {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  .headerSection {
+    text-align: left;
+  }
+  
+  .mainTitle {
+    font-size: 2.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .titleUnderline {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 1.5rem;
+  }
+  
+  .underline {
+    width: 5rem;
+    height: 0.25rem;
+    background-color: #fbbf24;
+  }
+  
+  .contentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  @media (min-width: 768px) {
+    .contentContainer {
+      flex-direction: row;
+    }
+  }
+  
+  .textSection {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  
+  @media (min-width: 768px) {
+    .textSection {
+      width: 50%;
+      margin-bottom: 0;
+    }
+  }
+  
+  .subTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .description {
+    margin-bottom: 1rem;
+  }
+  
+  .imageSection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  @media (min-width: 768px) {
+    .imageSection {
+      width: 50%;
+    }
+  }
+  
+  .mainImage {
+    width: 100%;
+    max-width: 28rem;
+  }
+  
+  .featuresContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .featureItem {
+    width: 50%;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  @media (min-width: 768px) {
+    .featureItem {
+      width: 20%;
+    }
+  }
+  
+  .featureIcon {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5rem;
+  }
+  
+  .exploreLink {
+    color: #002E5B;
+    font-weight: bold;
+  }
+  
+  .ctaSection {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .getStartedButton {
+    background-color: #facc15;
+    color: black;
+    font-weight: bold;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.375rem;
+    font-size: 1.25rem;
+    transition: background-color 0.3s;
+  }
+  
+  .getStartedButton:hover {
+    background-color: #FDE047;
+  }
