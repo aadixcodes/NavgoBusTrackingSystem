@@ -21,7 +21,7 @@ const AboutUs = () => {
           <h1 className={styles.head}>About Us</h1>
         <section className={styles.hero}>
           <div className={styles.heroImage}>
-            <img src="/Assets/aboutus2.svg" alt="Navgo app on smartphone" />
+            <img src="/Assets/aboutusimg.png" alt="Navgo app on smartphone" />
           </div>
           <div className={styles.heroContent}>
             <h1 className="text-[25px]">
